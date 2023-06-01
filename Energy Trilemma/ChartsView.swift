@@ -16,6 +16,9 @@ struct MountPrice: Identifiable {
 }
 
 struct ChartsView: View {
+    
+    
+    
     var body: some View {
         List {
             Chart {

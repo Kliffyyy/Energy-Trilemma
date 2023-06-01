@@ -14,6 +14,7 @@ struct EnergyTypes : Identifiable, Hashable {
     var sustainable: Bool
     var costPerKWH: Double
     var availibility: Bool
+    var efficiency: Int
 }
 
 enum energyType : String {
@@ -34,8 +35,8 @@ enum energyType : String {
     }
 }
 
-let listEnergyTypes : [EnergyTypes] = [.init(name: .geothermal, sustainable: true, costPerKWH: 0.07, availibility: false),
-                                       .init(name: .nuclear, sustainable: false, costPerKWH: 0.25, availibility: false),
-                                       .init(name: .solar, sustainable: true, costPerKWH: 0.05, availibility: true),
-                                       .init(name: .naturalGas, sustainable: false, costPerKWH: 0.07, availibility: true),
-                                       .init(name: .fossilFuel, sustainable: false, costPerKWH: 0.15, availibility: true)]
+let listEnergyTypes : [EnergyTypes] = [.init(name: .geothermal, sustainable: true, costPerKWH: 0.07, availibility: false, efficiency: 300),
+                                       .init(name: .nuclear, sustainable: false, costPerKWH: 0.25, availibility: false, efficiency: 33),
+                                       .init(name: .solar, sustainable: true, costPerKWH: 0.05, availibility: true, efficiency: 15),
+                                       .init(name: .naturalGas, sustainable: false, costPerKWH: 0.07, availibility: true, efficiency: 60),
+                                       .init(name: .fossilFuel, sustainable: false, costPerKWH: 0.15, availibility: true, efficiency: 33)]

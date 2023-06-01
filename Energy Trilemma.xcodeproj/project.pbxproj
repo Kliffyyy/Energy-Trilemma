@@ -13,6 +13,7 @@
 		071CAEDB2A2779700009CB25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071CAEDA2A2779700009CB25 /* Preview Assets.xcassets */; };
 		071CAEE22A277CDB0009CB25 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CAEE12A277CDB0009CB25 /* Data.swift */; };
 		071CAEE42A2788AC0009CB25 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CAEE32A2788AC0009CB25 /* ChartsView.swift */; };
+		07F957DE2A28CF6700197A9C /* CompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F957DD2A28CF6700197A9C /* CompareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		071CAEDA2A2779700009CB25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		071CAEE12A277CDB0009CB25 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		071CAEE32A2788AC0009CB25 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		07F957DD2A28CF6700197A9C /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				071CAED32A27796F0009CB25 /* Energy_TrilemmaApp.swift */,
 				071CAED52A27796F0009CB25 /* ContentView.swift */,
+				07F957DD2A28CF6700197A9C /* CompareView.swift */,
 				071CAEE32A2788AC0009CB25 /* ChartsView.swift */,
 				071CAEE12A277CDB0009CB25 /* Data.swift */,
 				071CAED72A2779700009CB25 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F957DE2A28CF6700197A9C /* CompareView.swift in Sources */,
 				071CAED62A27796F0009CB25 /* ContentView.swift in Sources */,
 				071CAEE22A277CDB0009CB25 /* Data.swift in Sources */,
 				071CAED42A27796F0009CB25 /* Energy_TrilemmaApp.swift in Sources */,
