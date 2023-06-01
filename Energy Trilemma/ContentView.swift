@@ -12,8 +12,8 @@ struct ContentView: View {
     @State private var selectedEnergy : EnergyTypes = listEnergyTypes[0]
     
     var body: some View {
-        NavigationView {
-            TabView {
+        TabView {
+            NavigationView {
                 VStack {
                     // CalculationViews
                     List {
@@ -23,7 +23,6 @@ struct ContentView: View {
                                     Text($0.name.description)
                                 }
                             }
-                            .pickerStyle(.automatic)
                         }
                         
                         Section("Information") {
@@ -62,17 +61,18 @@ struct ContentView: View {
                         //                    }
                         //                }
                     }
+                    .listStyle(.insetGrouped)
                 }
-                .tabItem {
-                    Image(systemName: "house")
-                }
-                
-                CompareView()
-                    .tabItem {
-                        Image(systemName: "tablecells.fill")
-                    }
+                .navigationTitle("Home")
             }
-            .navigationTitle("Home")
+            .tabItem {
+                Image(systemName: "house")
+            }
+            
+            CompareView()
+                .tabItem {
+                    Image(systemName: "tablecells.fill")
+                }
         }
     }
 }
