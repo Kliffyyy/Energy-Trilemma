@@ -86,17 +86,19 @@ struct CompareView: View {
                     }
                     .padding(.vertical)
                 }
-                
-                Section("Winner?") {
-                    HStack {
-                        Text("for now I have no clue")
-                    }
-                }
+
+//                Section("Winner") {
+//                    HStack {
+//                        Text("The winner is \(count1 > count2 ? selectedEnergy2.name.rawValue : selectedEnergy1.name.rawValue) energy")
+//                    }
+//                }
+//                .listStyle(.sidebar)
             }
             .navigationTitle("Compare Sources")
         }
     }
 }
+
 
 struct CompareView_Previews: PreviewProvider {
     static var previews: some View {
